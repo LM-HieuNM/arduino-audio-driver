@@ -49,7 +49,9 @@
 #define INVERT_MCLK         0 // do not invert
 #define INVERT_SCLK         0
 
-#define IS_DMIC             0 // Is it a digital microphone
+#ifndef IS_DMIC
+#define IS_DMIC             0 
+#endif
 
 #define MCLK_DIV_FRE        256
 
